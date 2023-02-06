@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.41)
 # Database: house_plants
-# Generation Time: 2023-02-06 12:03:57 +0000
+# Generation Time: 2023-02-06 13:34:29 +0000
 # ************************************************************
 
 
@@ -27,10 +27,10 @@ DROP TABLE IF EXISTS `plants`;
 
 CREATE TABLE `plants` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `colloquial_name` varchar(255) DEFAULT NULL,
-  `latin_name` varchar(255) DEFAULT NULL,
-  `size_cm` int(11) DEFAULT NULL,
-  `image_url` varchar(255) DEFAULT NULL,
+  `colloquial_name` varchar(255) DEFAULT '',
+  `latin_name` varchar(255) DEFAULT '',
+  `size_cm` int(11) unsigned DEFAULT NULL,
+  `image_url` varchar(255) DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
