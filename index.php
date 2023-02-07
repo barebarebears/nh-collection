@@ -1,16 +1,18 @@
 <?php
+require_once 'functions.php';
+
+$db = createDbConnection();
+$all_data = getAllData($db);
+$planthtml = callPlant($all_data);
 
 ?>
-
-
-
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>House of Plants</title>
+    <title>Plant Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -20,36 +22,25 @@
         <img src="logo.png" alt="Logo" />
         <ul>
             <li>
-                <a href="">My Collection</a>
-            </li>
-            <li>
-                <a href="">Add Plant</a>
-            </li>
-            <li>
-                <a href="">Remove Plant</a>
+                <a href="#collection">My Collection</a>
             </li>
         </ul>
     </nav>
     <header>
-        <div>
+        <div class="title">
             <h1>Plant Tracker</h1>
+        </div>
+        <div class="description">
             <p>For when you have way way too many plants.</p>
         </div>
     </header>
-    <main>
-        <article>
-            <img alt="Picture of a Plant">
-            <div>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-        </article>
+    <main id="collection">
+            <?php
+                echo $planthtml;
+            ?>
     </main>
     <footer>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>© Copyright 2023 | Website created by Nick Hackland</p>
     </footer>
 </body>
 </html>

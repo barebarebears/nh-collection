@@ -2,3 +2,93 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ABC270;
+    font-family: cursive;
+}
+
+nav {
+    background-color: #FDA769;
+    display: flex;
+    justify-content: space-between;
+}
+nav img {
+    height: 60px;
+    opacity: 0.9;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 25px;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #FFFFFF;
+}
+a:visited {
+    color: #FFFFFF;
+}
+a:hover {
+    color: #473C33;
+}
+
+header {
+    background-image: url(plants.jpg);
+    height: 780px;
+    /*background-size: cover;*/
+}
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    padding-top: 35px;
+}
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    color: #4E6C50;
+    font-size:11vmin;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0px;
+}
+.description p {
+    font-size:3vmin;
+    color: #473C33;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main article {
+    padding: 20px;
+    text-align: center;
+}
+.collection-image {
+    width:250px;
+    height:250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    background-color: #FEC868;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
