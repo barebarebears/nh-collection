@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Creates a DB connection
+ * @return PDO as the db conn
+ */
 function createDbConnection(): PDO
 {
     $db = new PDO('mysql:host=db; dbname=nhhouse_plants', 'root', 'password');
@@ -7,6 +11,11 @@ function createDbConnection(): PDO
     return $db;
 }
 
+/**
+ * retrieves plants data from DB
+ * @param PDO $db the PDO connection
+ * @return array the results from DB
+ */
 function getAllData(PDO $db): array
 {
     $stmnt = $db->prepare("SELECT * FROM `plants`");
@@ -15,6 +24,11 @@ function getAllData(PDO $db): array
 
 }
 
+/**
+ * display plants data in html format
+ * @param $plants multidimensional array of cards
+ * @return string to output
+ */
 function callPlant(array $plants): string
 {
     $result = '';

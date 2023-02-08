@@ -54,8 +54,6 @@ header div {
     padding-top: 35px;
 }
 h1 {
-    font-style: normal;
-    font-weight: bold;
     color: #4E6C50;
     font-size:11vmin;
     letter-spacing: 0.03em;
@@ -87,8 +85,6 @@ main article {
 
 footer {
     background-color: #FEC868;
-    text-align: center;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
