@@ -24,6 +24,9 @@ $planthtml = callPlant($all_data);
             <li>
                 <a href="#collection">My Collection</a>
             </li>
+            <li>
+                <a href="addplant.php">Add Plant</a>
+            </li>
         </ul>
     </nav>
     <header>

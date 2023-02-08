@@ -53,6 +53,3 @@ function callPlant(array $plants): string
     return $result;
 }
 
-
-
-
