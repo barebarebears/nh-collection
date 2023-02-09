@@ -1,4 +1,5 @@
 <?php
+
 require_once 'functions.php';
 
 $db = createDbConnection();
@@ -6,7 +7,6 @@ $all_data = getAllData($db);
 $planthtml = callPlant($all_data);
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +23,9 @@ $planthtml = callPlant($all_data);
         <ul>
             <li>
                 <a href="#collection">My Collection</a>
+            </li>
+            <li>
+                <a href="addplant.php">Add Plant</a>
             </li>
         </ul>
     </nav>
