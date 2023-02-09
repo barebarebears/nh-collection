@@ -33,7 +33,7 @@ session_start();
             <label for="latin_name">Latin name: </label>
             <input id="latin_name" type="text" name="latin_name" />
             <label for="size_cm">Size (cm): </label>
-            <input id="size_cm" type="number" name="size_cm" />
+            <input id="size_cm" type="text" name="size_cm" />
             <label for="image_url">Image URL: </label>
             <input id="image_url" type="url" name="image_url" />
             <input type="submit" value="Submit Plant"/>
