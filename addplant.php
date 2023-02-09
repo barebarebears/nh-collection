@@ -1,5 +1,8 @@
 <?php
 
+session_start();
+
+
 ?>
 
 
@@ -26,13 +29,13 @@
         <h3>Add Plant</h3>
         <form action="postdata.php" method="post">
             <label for="colloquial_name">Colloquial name: </label>
-            <input type="text" name="colloquial_name" />
+            <input id="colloquial_name" type="text" name="colloquial_name" />
             <label for="latin_name">Latin name: </label>
-            <input type="text" name="latin_name" />
+            <input id="latin_name" type="text" name="latin_name" />
             <label for="size_cm">Size (cm): </label>
-            <input type="number" name="size_cm" />
+            <input id="size_cm" type="number" name="size_cm" />
             <label for="image_url">Image URL: </label>
-            <input type="url" name="image_url" />
+            <input id="image_url" type="url" name="image_url" />
             <input type="submit" value="Submit Plant"/>
         </form>
     </div>
