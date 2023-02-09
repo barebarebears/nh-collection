@@ -14,4 +14,13 @@ $latin_name_input = $_POST['latin_name'];
 $size_input = $_POST['size_cm'];
 $image_input = $_POST['image_url'];
 
-echo validateNewPlant($colloquial_name_input, $latin_name_input, $size_input, $image_input);
+$input_value = validateNewPlant($colloquial_name_input, $latin_name_input, $size_input, $image_input);
+
+$db = createDbConnection();
+
+if ($input_value === true) {
+    addNewPlant($db, $colloquial_name_input, $latin_name_input, $size_input, $image_input);
+    header('Location: index.php');
+} else {
+    header('Location: invalidpage.php');
+}
