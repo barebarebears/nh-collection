@@ -11,6 +11,7 @@ nav {
     background-color: #FDA769;
     display: flex;
     justify-content: space-between;
+    font-family: "American Typewriter";
 }
 nav img {
     height: 60px;
@@ -72,6 +73,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: "American Typewriter";
 }
 main article {
     padding: 20px;
@@ -87,4 +89,39 @@ footer {
     background-color: #FEC868;
     display: flex;
     justify-content: center;
+}
+
+.input-container {
+    font-family: "Academy Engraved LET";
+}
+
+
+.input-container h3 {
+    padding-right: 50px;
+    color: #4E6C50;
+    font-size:5vmin;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+.input-container form {
+    padding-top: 25px;
+}
+
+.input-container input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #4E6C50;
+}
+
+.input-container input[type=submit] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 38px 10px 38px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }

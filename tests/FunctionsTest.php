@@ -37,4 +37,24 @@ class FunctionsTest extends TestCase
         $input = 'silly';
         $case = callPlant($input);
     }
+
+    public function testSuccessValidateNewPlant()
+    {
+        $expected = 'valid';
+        $case = validateNewPlant('Plant', 'Plantus', 50, 'https://www.google.com/');
+        $this->assertEquals($expected, $case);
+    }
+
+    public function testFailureValidateNewPlant()
+    {
+        $expected = 'invalid';
+        $case = validateNewPlant('3857@plant', 'plantus', 34, 'https://www.google.com/');
+        $this->assertEquals($expected, $case);
+    }
+    public function testMalformedValidateNewItem()
+    {
+        $this->expectException(TypeError::class);
+        $input = ['plant', 56, 'https://www.google.com/'];
+        $case = validateNewPlant($input);
+    }
 }
