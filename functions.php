@@ -71,8 +71,8 @@ function validateNewPlant(string $colloquial_name_input, string $latin_name_inpu
     $size_input = filter_var($size_input, FILTER_SANITIZE_STRING);
     $image_input = filter_var($image_input, FILTER_SANITIZE_URL);
 
-    $colloquial_name_input = preg_match('/^[a-zA-Z\s]+$/', $colloquial_name_input);
-    $latin_name_input = preg_match('/^[a-zA-Z\s]+$/', $latin_name_input);
+    $colloquial_name_input = preg_match('/^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$/', $colloquial_name_input);
+    $latin_name_input = preg_match('/^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$/', $latin_name_input);
     $size_input = preg_match('/^\d+$/', $size_input);
     $image_input = filter_var($image_input, FILTER_VALIDATE_URL);
 

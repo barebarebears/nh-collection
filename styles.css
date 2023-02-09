@@ -125,3 +125,13 @@ footer {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.input-container a{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 38px 10px 38px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

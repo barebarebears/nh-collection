@@ -1,8 +1,6 @@
+<?php
 
-
-
-
-
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,9 +23,7 @@
 <header>
     <div class="input-container">
         <h3>Invalid entry</h3>
-        <form action="addplant.php">
-            <input type="submit" value="Back"/>
-        </form>
+        <a href="addplant.php">Back</a>
     </div>
 </header>
 <footer>

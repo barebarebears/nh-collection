@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require_once 'functions.php';
 
 $db = createDbConnection();
@@ -9,7 +7,6 @@ $all_data = getAllData($db);
 $planthtml = callPlant($all_data);
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

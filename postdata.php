@@ -16,9 +16,9 @@ $image_input = $_POST['image_url'];
 
 $input_value = validateNewPlant($colloquial_name_input, $latin_name_input, $size_input, $image_input);
 
-$db = createDbConnection();
 
 if ($input_value === true) {
+    $db = createDbConnection();
     addNewPlant($db, $colloquial_name_input, $latin_name_input, $size_input, $image_input);
     header('Location: index.php');
 } else {
